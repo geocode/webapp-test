@@ -1,0 +1,9 @@
+    steps:
+    - name: 'gcr.io/cloud-builders/java/mvn'
+      args: [ 'clean', 'package']
+    - name: 'ubuntu'
+      args: ['pwd', '&&', 'ls']
+    - name: 'gcr.io/cloud-builders/docker'
+      args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/webapp-test', '.' ]
+    images:
+    - 'gcr.io/$PROJECT_ID/webapp-test'
