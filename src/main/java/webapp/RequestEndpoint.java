@@ -14,7 +14,7 @@ public class RequestEndpoint {
     @Produces(MediaType.TEXT_PLAIN)
     public String submit() {
 
-	String output = "New Production Version -- v2 -- request received and sent to event log";
+	String output = "New Production Version -- v3 -- request received and sent to event log";
         System.out.println(output);
         return output;
     }
