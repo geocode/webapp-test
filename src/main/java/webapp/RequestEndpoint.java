@@ -14,7 +14,7 @@ public class RequestEndpoint {
     @Produces(MediaType.TEXT_PLAIN)
     public String submit() {
 
-	String output = "Original Production Version -- v8.34.5.1 -- restful service call received and new event has been sent to event log";
+	String output = "New Production Version -- v8.34.5.2 -- restful service call received and new event has been sent to event log";
         System.out.println(output);
         return output;
     }
